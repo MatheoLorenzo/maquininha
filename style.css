@@ -1,3 +1,37 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+nav > h1 {
+    color: rgb(255, 166, 0);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 150px;
+    height: 80px;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.product > h1{
+    color: orange;
+    font-size: 50px;
+    padding-left: 50px;
+}
+
 img {
     height: 200px;
     
