@@ -13,8 +13,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 150px;
+    padding-inline: 180px;
     height: 80px;
+    margin-bottom: 50px
 }
 
 li {
@@ -26,13 +27,40 @@ a {
     color: white;
 }
 
-.product > h1{
+.title > h1{
     color: orange;
     font-size: 50px;
-    padding-left: 50px;
+    margin-left: 190px;
+    margin-bottom: 0px;
 }
 
-img {
-    height: 200px;
-    
+.title > p {
+    margin-left: 190px;
+}
+
+.title > button {
+    margin-top: 16px;
+    margin-left: 190px;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    width: 170px;
+    height: 45px;
+    margin-left: 150px;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.container-img-product >img {
+   height: 650px;
+   width: 700px;
+   object-fit: cover;
 }
