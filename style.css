@@ -5,6 +5,10 @@ body {
     color: white;
 }
 
+header {
+    background-color: rgba(19, 19, 19, 0.562);
+}
+
 nav > h1 {
     color: rgb(255, 166, 0);
 }
@@ -41,14 +45,10 @@ a {
 .title > button {
     margin-top: 16px;
     margin-left: 190px;
-}
-
-button {
     background-color: orange;
     color: white;
     width: 170px;
     height: 45px;
-    margin-left: 150px;
 }
 
 .product {
@@ -60,7 +60,17 @@ button {
 }
 
 .container-img-product >img {
-   height: 650px;
+    width: 100%;
+    height: auto; 
+    max-width: 600px;
+   /*height: 650px;
    width: 700px;
-   object-fit: cover;
+   object-fit: cover;*/
+}
+
+.container-img-product {
+    width: 50%; /* Largura do container */
+    max-width: 900px; /* Largura máxima */
+    height: 500px; /* Altura fixa */
+    overflow: hidden; /* Para esconder partes da imagem que saem do container */
 }
