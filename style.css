@@ -19,7 +19,6 @@ nav {
     align-items: center;
     padding-inline: 180px;
     height: 80px;
-    margin-bottom: 50px
 }
 
 li {
@@ -40,6 +39,7 @@ a {
 
 .title > p {
     margin-left: 190px;
+    margin-right: 110px;
 }
 
 .title > button {
@@ -68,9 +68,3 @@ a {
    object-fit: cover;*/
 }
 
-.container-img-product {
-    width: 50%; /* Largura do container */
-    max-width: 900px; /* Largura máxima */
-    height: 500px; /* Altura fixa */
-    overflow: hidden; /* Para esconder partes da imagem que saem do container */
-}
