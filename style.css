@@ -114,6 +114,7 @@ nav > h1 {   /*LOGO*/
 .preço-com-desconto {
     color: rgb(16, 175, 16);
     font-size: 20px;
+    margin-right: 10px;
 }
 
 .number-input {
