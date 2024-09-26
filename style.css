@@ -6,11 +6,7 @@ body {
 }
 
 header {
-    background-color: rgba(19, 19, 19, 0.562);
-}
-
-nav > h1 {
-    color: rgb(255, 166, 0);
+    background-color: rgba(32, 32, 32, 0.692);
 }
 
 nav {
@@ -21,30 +17,44 @@ nav {
     height: 80px;
 }
 
-li {
-    display: inline-block;
+nav > h1 {   /*LOGO*/
+    color: rgb(255, 166, 0);
+    margin-left: 60px;
 }
 
-a {
+.nav li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.nav {
+    margin-right: 900px;
+}
+
+.nav a {
     text-decoration: none;
     color: white;
 }
 
+.nav a:hover {
+    text-decoration: underline;
+}
+
 .title > h1{
     color: orange;
-    font-size: 50px;
-    margin-left: 190px;
+    font-size: 60px;
+    margin-left: 200px;
     margin-bottom: 0px;
 }
 
 .title > p {
-    margin-left: 190px;
+    margin-left: 200px;
     margin-right: 110px;
 }
 
 .title > button {
     margin-top: 16px;
-    margin-left: 190px;
+    margin-left: 200px;
     background-color: orange;
     color: white;
     width: 170px;
@@ -62,9 +72,84 @@ a {
 .container-img-product >img {
     width: 100%;
     height: auto; 
-    max-width: 600px;
-   /*height: 650px;
-   width: 700px;
-   object-fit: cover;*/
+    max-width: 1000px;
+    object-fit: cover;
 }
 
+.main-image > img{
+    width: 100%;
+    height: auto;
+    max-width: 550px;
+    margin-left: 200px;
+}
+
+.thumbnail-images > img {
+    width: 100%;
+    height: auto;
+    max-width: 181px;
+}
+
+.thumbnail-images {
+    margin-left: 200px;
+}
+
+.purchase {
+    display: flex;
+}
+
+.purchase-info {
+    margin-left: 50px;
+}
+
+.purchase-info > h2 {
+    font-size: 35px;
+}
+
+.preço {
+    color: red;
+    font-size: 14px;
+    text-decoration:line-through
+}
+
+.preço-com-desconto {
+    color: rgb(16, 175, 16);
+    font-size: 20px;
+}
+
+.number-input {
+    display: flex;
+    align-items: center;
+}
+
+.number-input input[type="number"] {
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 5px;
+    -moz-appearance: textfield;
+}
+
+.number-input button {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.number-input button:hover {
+    background-color: rgba(255, 166, 0, 0.705);
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

@@ -11,7 +11,8 @@
 
         <nav>
             <h1>GoShop</h1>
-            <ul>
+            
+            <ul class="nav">
                 <li><a href="#">Contato</a></li>
                 <li><a href="#">Sobre nós</a></li>
                 <li><a href="#">Rastreie seu pedido</a></li>
@@ -26,7 +27,7 @@
          <div class="title">
             <h1>Máquina de Barbear</h1> 
          
-            <p>Maquina De Barbear, Aparador e Depilador de Pelos Elétrico 3 Em 1 <br> Ótima escolha de presente para namorado, marido, pai, família e amigos <br> Melhor custo benefício para máquinas com bateria interna. Corra e adquira hoje!.</p>
+            <p>Maquina De Barbear, Aparador e Depilador de Pelos Elétrico 3 Em 1 <br> Ótima escolha de presente para namorado, marido, pai, família e amigos <br> Melhor custo benefício para máquinas com bateria interna. Corra e adquira hoje!</p>
 
             <button>Compre agora</button>
          </div>
@@ -43,15 +44,16 @@
                     <img id="productImage" src="imagens/GoShop-logo.jpg" alt="Imagem Principal">
                 </div>
                 <div class="thumbnail-images">
-                    <img src="imagens/insp.jpg" alt="Produto 1" onclick="changeImage('imagens/insp.jpg')">
-                    <img src="imagens/GoShop-logo2.jpg" alt="Produto 2" onclick="changeImage('imagens/GoShop-logo2.jpg')">
+                    <img src="imagens/GoShop-logo2.jpg" alt="Produto 1" onclick="changeImage('imagens/GoShop-logo2.jpg')">
+                    <img src="imagens/GoShop-logo.jpg" alt="Produto 2" onclick="changeImage('imagens/GoShop-logo.jpg')">
+                    <img src="imagens/GoShop-logo2.jpg" alt="Produto 3" onclick="changeImage('imagens/GoShop-logo2.jpg')">
                 </div>
             </div>
-
+            <div class="purchase-info">
             <h2>Máquina de Barbear Vintage T9 Clipper</h2>
             <p>
-                <span class="preço">R$999,99</span>
                 <span class="preço-com-desconto">R$499,99</span>
+                <span class="preço">R$999,99</span>
             </p>
             <ul>
                 <li>Bateria com duração de 2 horas </li>
@@ -62,12 +64,19 @@
 
             <p>PS.: Utilizar fonte de celular para realizar o carregamento da bateria da máquina de cortar cabelo !</p>
 
-            <form action="processar-pedido" method="POST">
+            <!--<form action="processar-pedido" method="POST">
                 <label for="quantidade"></label>
-                <input type="number" id="iquantidade" name="quantidade" min="1" max="100" value="1">
+                <input type="number" id="iquantidade" name="quantidade" min="1" max="100" value="1"> <br>
                 
                 <input type="submit" value="Ir para o Pagamento">
-              </form>
+              </form> -->
+
+                <!--Apagar esse dps-->
+              <div class="number-input">
+                <button class="btn-decrease">-</button>
+                <input type="number" id="quantidade" name="quantidade" min="1" value="1" readonly>
+                <button class="btn-increase">+</button>
+            </div>
 
               <div class="metodos-pagamento">
                 <img src="imagens/visa.png" alt="Visa" style="width: 50px;">
@@ -75,6 +84,7 @@
                 <img src="imagens/paypal.png" alt="PayPal" style="width: 50px;">
                 <img src="imagens/boleto.png" alt="Boleto" style="width: 50px;">
               </div>
+            </div>
         </article>
 
         <article class="sobre-o-produto">
