@@ -43,18 +43,18 @@ nav > h1 {   /*LOGO*/
 .title > h1{
     color: orange;
     font-size: 60px;
-    margin-left: 200px;
+    margin-left: 210px;
     margin-bottom: 0px;
 }
 
 .title > p {
-    margin-left: 200px;
+    margin-left: 210px;
     margin-right: 110px;
 }
 
 .title > button {
     margin-top: 16px;
-    margin-left: 200px;
+    margin-left: 210px;
     background-color: orange;
     color: white;
     width: 170px;
@@ -79,18 +79,18 @@ nav > h1 {   /*LOGO*/
 .main-image > img{
     width: 100%;
     height: auto;
-    max-width: 550px;
-    margin-left: 200px;
+    max-width: 600px;
+    margin-left: 210px;
 }
 
 .thumbnail-images > img {
     width: 100%;
     height: auto;
-    max-width: 181px;
+    max-width: 197px;
 }
 
 .thumbnail-images {
-    margin-left: 200px;
+    margin-left: 210px;
 }
 
 .purchase {
@@ -98,11 +98,13 @@ nav > h1 {   /*LOGO*/
 }
 
 .purchase-info {
-    margin-left: 50px;
+    margin-left: 170px;
+    margin-top: 140px;
 }
 
 .purchase-info > h2 {
-    font-size: 35px;
+    font-size: 40px;
+    margin: 0px;
 }
 
 .preço {
@@ -113,7 +115,7 @@ nav > h1 {   /*LOGO*/
 
 .preço-com-desconto {
     color: rgb(16, 175, 16);
-    font-size: 20px;
+    font-size: 25px;
     margin-right: 10px;
 }
 
@@ -152,4 +154,34 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+.comprar {
+    width: 523px;
+    height: 40px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.comprar:hover {
+    background-color: rgba(255, 166, 0, 0.548);
+}
+
+.metodos-pagamento {
+    margin-top: 15px;
+    margin-left: 160px;
+}
+
+.especificações li {
+    margin-top: 7px;
+}
+
+.botão-compra {
+    margin-left: 115px;
+
 }
