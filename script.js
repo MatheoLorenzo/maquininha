@@ -17,3 +17,4 @@ decreaseBtn.addEventListener('click', () => {
         quantityInput.value = currentValue - 1;
     }
 });
+
