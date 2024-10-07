@@ -44,20 +44,23 @@ nav > h1 {   /*LOGO*/
     text-decoration: underline;
 }
 
+.title {
+    margin-bottom: 100px; /* Ajuste o valor conforme necessário */
+}
+
 .title > h1{
     color: orange;
-    font-size: 60px;
+    font-size: 65px;
     margin-left: 210px;
     margin-bottom: 0px;
 }
 
 .title > p {
     margin-left: 210px;
-    margin-right: 110px;
+    font-size: 19px;
 }
 
 .title button {
-    padding: 12px 24px;
     margin-left: 210px;
     width: auto;
     background-color: orange;
@@ -71,13 +74,12 @@ nav > h1 {   /*LOGO*/
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 150px;
 
 }
 
 .container-img-product >img {
-    width: 100%;
-    height: auto; 
+    width: 50vw;
+    height: 46vw; 
     max-width: 950px;
     object-fit: cover;
 }
