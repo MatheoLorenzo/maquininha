@@ -364,3 +364,27 @@ img {
         }
     }
 }
+
+@media (max-width: 500px) {
+    .main-image img{
+        max-width: 150%;
+        margin: auto;
+        object-fit: cover;
+    }
+
+    .main-image {
+        width: 240px;
+    }
+
+    .thumbnail-images {
+        margin-left: 2.8%;
+        display: flex;
+    }
+    
+    .thumbnail-images > img {
+        max-width: 100%;
+        object-fit: cover;
+        height: 20.6vh;
+        margin: 0.4vw;
+    }
+}
