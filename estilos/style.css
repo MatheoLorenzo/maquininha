@@ -1,5 +1,7 @@
 html {
     scroll-behavior:smooth;
+    overflow-x: hidden; 
+    max-width: 100vw;  
   }
 
 body {
@@ -156,6 +158,7 @@ img {
 
 #product-component-1728706157769 {
     margin-left: 30%;
+    display: flex;
 }
 
 @media (max-width: 1200px) { 
@@ -294,7 +297,7 @@ img {
 
     .metodos-pagamento {
         margin-top: 15px;
-        margin-left: 22%;
+        margin-left: 150px;
     }
     
     .especificações li {
@@ -302,10 +305,20 @@ img {
     }
     
     #product-component-1728706157769 {
-        margin-left: 26%;
+        margin-left: 15.5vw;
+    }
+
+    @media (max-width: 670px) {
+        .metodos-pagamento {
+            width: 40vw;
+        }
+
+        #product-component-1728706157769{
+            margin-left: 23vw;
+        }
     }
     
-    @media (max-width: 600px) {
+    @media (max-width: 630px) {
         .title > h1 {
             font-size: 35px;
         }
@@ -319,15 +332,28 @@ img {
         .nav li {
             margin-left: 12px;
         }
+
+        .container-img-product > img {
+            max-width: 100%;
+            height: 90vw;
+            margin-bottom: 30px;
+            margin-bottom: 5em;
+        }
+
+        .main-image {
+            max-width: 100%;
+            object-fit: cover;
+        }
         
         .thumbnail-images > img {
             max-width: 100%;
             object-fit: cover;
+            height: 30vw;
         }
 
         .main-image {
                max-width: 100%;
-               object-fit: cover;
+               margin-left: 2%;
         }
     }
 }
