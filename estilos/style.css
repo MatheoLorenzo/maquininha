@@ -205,7 +205,8 @@ img {
     
     .title > h1 {
         color: #ffa600; 
-        font-size: 50px; 
+        font-size: 65px; 
+        margin-top: 24%;
     }
     
     .title > p {
@@ -223,12 +224,12 @@ img {
         font-size: 16px;
         width: 150px;
         height: 35px;
-        margin-bottom: 30px;
+        margin-bottom: 36%;
     }
     
     .container-img-product > img {
         max-width: 100%;
-        height: 65vw;
+        height: 80vw;
         margin-bottom: 30px;
     }
 
@@ -320,7 +321,12 @@ img {
     
     @media (max-width: 630px) {
         .title > h1 {
-            font-size: 35px;
+            font-size: 65px;
+            margin-top: 30%;
+        }
+
+        .product p {
+            font-size: 17px;
         }
 
         nav > h1 {   
@@ -338,6 +344,7 @@ img {
             height: 90vw;
             margin-bottom: 30px;
             margin-bottom: 5em;
+            margin-top: 4%;
         }
 
         .main-image {
@@ -348,7 +355,7 @@ img {
         .thumbnail-images > img {
             max-width: 100%;
             object-fit: cover;
-            height: 30vw;
+            height: 28vw;
         }
 
         .main-image {
