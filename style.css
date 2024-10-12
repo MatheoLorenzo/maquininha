@@ -17,19 +17,18 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;     /*padding-inline: 11em; */
     height: 80px;
     margin-right: 20em
 }
 
 nav > h1 {   /*LOGO*/
     color: rgb(255, 166, 0);
-     margin-left: 15vw;
+     margin-left: 15vw;  /* 1vw no @midia*/
 }
 
 .nav li {
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .nav {
@@ -46,14 +45,6 @@ nav > h1 {   /*LOGO*/
 .nav a:hover {
     text-decoration: underline;
 }
-
-nav img {
-    width: 50px; /* Largura padrão */
-    height: auto;
-    margin-left: auto;
-}
-
-/*Media*/
 
 .title {
     margin-bottom: 100px;
@@ -84,6 +75,10 @@ nav img {
     font-size: 0.9vw;
 }
 
+img {
+    max-width: 25%;
+}
+
 .product {
     display: flex;
     flex-direction: row;
@@ -99,24 +94,21 @@ nav img {
 }
 
 .main-image > img{
-    width: 100%;
-    height: auto;
-   max-width: 38vw;/* max-width: 62.8vh;*/
-    margin-left: 26%;
-}
-
-.thumbnail-images > img {
-    display: flex;
-    width: 100%;
-    height: auto;
-    max-width: 12.46vw;/*max-width: 20.9vh;*/
-    margin-right: 5px;
+    max-width: 100%;
+    height: 36.6vw; 
+    object-fit: cover;
+    margin-left: 30%;
 }
 
 .thumbnail-images {
+    margin-left: 30%;
     display: flex;
-    margin-left: 26.2%;
-    
+}
+
+.thumbnail-images > img {
+    max-width: 100%;
+    height: 12.2vw; 
+    object-fit: cover;
 }
 
 .purchase {
@@ -125,12 +117,12 @@ nav img {
 
 .purchase-info {
     margin-left: 14vw;
+    margin-right: 2vw;
     margin-top: 150px;
 }
 
 .purchase-info > h2 {
-    font-size: 40px;
-    margin: 0px;
+    font-size: 2.5vw;
 }
 
 .preço {
@@ -145,44 +137,28 @@ nav img {
     margin-right: 10px;
 }
 
-.comprar:hover {
-    background-color: rgba(255, 166, 0, 0.548);
+.purchase-info p {
+    font-size: 1.17vw;
 }
 
 .metodos-pagamento {
     margin-top: 15px;
-    margin-left: 160px;
+    margin-left: 33%;
+}
+
+.metodos-pagamento img{
+    margin-left: 5px;
 }
 
 .especificações li {
     margin-top: 7px;
 }
 
-.botão-compra {
-    margin-left: 115px;
+#product-component-1728706157769 {
+    margin-left: 30%;
 }
 
-@media (max-width: 1430px) {
-    .thumbnail-images > img {
-        display: flex;
-        width: 100%;
-        height: auto;
-        max-width: 12vw;/*max-width: 20.9vh;*/
-        margin-right: 5px;
-}
-}
-
-@media (max-width: 1340px) {
-    .thumbnail-images > img {
-        display: flex;
-        width: 100%;
-        height: auto;
-        max-width: 11.4vw;
-        margin-right: 5px;
-}
-}
-
-@media (max-width: 1240px) { /*Mobile */
+@media (max-width: 1200px) { 
     html {
         scroll-behavior: smooth;
     }
@@ -200,26 +176,16 @@ nav img {
         padding: 16px;
     }
     
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
     nav > h1 {
         color: #ffa600;
         font-size: 24px;
-        display: flex;
-    }
-    
-    .nav {
-        display: flex;
+        margin-left: 16%;
     }
     
     .nav a {
         text-decoration: none;
-        color: #fff; /* Branco */
-        font-size: 16px;
+        color: #fff;
+        font-size: 15px;
     }
     
     .product {
@@ -235,12 +201,12 @@ nav img {
     }
     
     .title > h1 {
-        color: #ffa600; /* Laranja */
-        font-size: 50px; /* Tamanho do título */
+        color: #ffa600; 
+        font-size: 50px; 
     }
     
     .title > p {
-        font-size: 16px; /* Descrição do produto */
+        font-size: 16px; 
         max-width: 700px;
         text-align: center;
     }
@@ -257,10 +223,6 @@ nav img {
         margin-bottom: 30px;
     }
     
-    .container-img-product {
-        margin: 20px 0; 
-    }
-    
     .container-img-product > img {
         max-width: 100%;
         height: 65vw;
@@ -269,16 +231,14 @@ nav img {
 
     .main-image > img{
         max-width: 100%;
-        height: 70vh;
+        height: 67vh;
         margin: auto;
     }
-    
+
     .thumbnail-images > img {
-        display: flex;
         max-width: 100%;
-        height: 22vh;
+        height: 21vh;
         margin: auto;
-        margin-right: 5px;
     }
 
     .thumbnail-images {
@@ -293,11 +253,11 @@ nav img {
     
     .purchase-info {
         margin-top: 20px;
-        text-align: center; /* Centraliza o texto */
+        text-align: center; 
     }
     
     .purchase-info > h2 {
-        font-size: 35px;
+        font-size: 2.5vw;
         text-align: center;
         margin-right: 3em;
 
@@ -310,14 +270,14 @@ nav img {
     }
     
     .preço-com-desconto {
-        color: #10af10; /* Verde */
-        font-size: 24px; /* Tamanho do preço com desconto */
+        color: #10af10; 
+        font-size: 24px; 
     }
     
     .metodos-pagamento {
         display: flex;
         justify-content: center;
-        gap: 15px; /* Espaçamento entre ícones de pagamento */
+        gap: 15px;
         margin-top: 20px;
         margin-right: 15em;
     }
@@ -331,20 +291,43 @@ nav img {
         text-align: center;
         margin-right: 6.7em;
     }
+
+    .metodos-pagamento {
+        margin-top: 15px;
+        margin-left: 22%;
+    }
+    
+    .especificações li {
+        margin-top: 10px;
+    }
+    
+    #product-component-1728706157769 {
+        margin-left: 26%;
+    }
     
     @media (max-width: 600px) {
         .title > h1 {
-            font-size: 20px; /* Reduz o tamanho do título */
+            font-size: 35px;
         }
-    
-        .title > p,
-        .preço,
-        .preço-com-desconto {
-            font-size: 14px; /* Reduz o tamanho do texto */
+
+        nav > h1 {   
+            color: rgb(255, 166, 0);
+             margin-left: 0.9vw;
+             font-size: 20px;
         }
-    
-        nav > h1 {
-            font-size: 20px; /* Reduz o tamanho da logo */
+
+        .nav li {
+            margin-left: 12px;
+        }
+        
+        .thumbnail-images > img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+
+        .main-image {
+               max-width: 100%;
+               object-fit: cover;
         }
     }
 }
