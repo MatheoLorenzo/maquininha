@@ -1,0 +1,43 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: rgba(32, 32, 32, 0.692);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin-right: 20em
+}
+
+nav > h1 {   /*LOGO*/
+    color: rgb(255, 166, 0);
+     margin-left: 15vw;  /* 1vw no @midia*/
+}
+
+.nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav {
+    display: flex;
+    margin-right: 45vw;
+    white-space: nowrap;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
